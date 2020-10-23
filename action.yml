@@ -1,13 +1,12 @@
 name: 'Dependabot Helper'
-description: 'Greet someone and record the time'
+description: 'Auto approve and auto merge Dependabot pull requests'
+branding:
+  icon: 'check-circle'
+  color: 'green'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  github-token:
+    description: 'The GITHUB_TOKEN secret'
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
 runs:
   using: 'node12'
   main: 'index.js'
